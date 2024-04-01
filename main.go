@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
-	"log"
 	"os"
+	"log"
 
 	"github.com/shomali11/slacker"
 )
@@ -39,6 +39,6 @@ func main() {
 
 	err := bot.Listen(ctx)
 	if err!= nil {
-        log.Fatal("Error: %v\n", err)
+        log.Fatal(err)
     }
 }
